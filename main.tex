@@ -18,8 +18,8 @@
 \usepackage{blindtext}
 \usepackage{hyperref}
 \setlength{\marginparwidth}{2cm}
-\usepackage{todonotes}
 \usepackage{natbib} %% para citaciones
+\usepackage{todonotes}
 \usepackage[format=hang,font=small,labelfont=bf]{caption}
 
 % *** ALIGNMENT PACKAGES ***
@@ -43,6 +43,7 @@
 
 \renewcommand\maketitlehooka{\null\mbox{}\vfill}
 \renewcommand\maketitlehookd{\vfill\null}
+\DeclareUnicodeCharacter{0301}{\hspace{-1ex}\'{ }}
 
 \begin{document}
 %crear titulo
@@ -120,7 +121,7 @@
 
 %\bibliographystyle{IEEEtran}
 \bibliographystyle{apalike}
-\bibliography{bibfile, references}
+\bibliography{references.bib}
 \newpage
 
 %% Cronograma
